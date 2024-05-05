@@ -1,11 +1,15 @@
 import { hovering, navLink } from "../utils/constant";
 import Link from "./Link";
 
-export default function MobileNav() {
+export default function MobileNav({ setIsOpen }) {
   return (
     <ul className=" absolute left-0 top-0 flex h-screen w-full flex-col items-center justify-center bg-slate-800 text-stone-200 transition-all  ">
       {navLink.map((data) => (
-        <li key={data.title} className={hovering}>
+        <li
+          key={data.title}
+          className={hovering}
+          onClick={() => setIsOpen(false)}
+        >
           <Link to={data.path}>{data.title}</Link>
         </li>
       ))}

@@ -29,7 +29,7 @@ export default function Nav({ setIsOpen, isOpen }) {
       >
         {!isOpen ? <FaBarsStaggered /> : <AiOutlineClose />}
       </button>
-      {isOpen && <MobileNav />}
+      {isOpen && <MobileNav setIsOpen={setIsOpen} />}
     </nav>
   );
 }
