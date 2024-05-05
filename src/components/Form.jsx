@@ -6,23 +6,23 @@ export default function Form() {
       onSubmit={(e) => {
         e.preventDefault();
       }}
-      className=" card bg-base-200 -z-1 mt-10 flex h-auto w-full items-center justify-center px-6 py-6"
+      className=" -z-1 card -ml-6 mt-10 flex h-auto items-center justify-center bg-base-200 px-6 py-6"
     >
       <Input label="Your Email" />
       <Input label="Subject" />
 
-      <label className="form-control w-full max-w-xs">
+      <label className="form-control ">
         <div className="label">
           <span className="label-text">Message</span>
         </div>
         <textarea
           type="text"
           placeholder="Type here"
-          className="input input-bordered w-96 max-w-xs"
+          className="md:w-98 input input-bordered w-72 max-w-xs"
         />
       </label>
 
-      <button className="mt-2 rounded-xl bg-blue-700 px-2 py-2 text-white">
+      <button className="mt-6 rounded-xl bg-blue-700 px-2 py-2 text-white">
         Submit
       </button>
     </form>

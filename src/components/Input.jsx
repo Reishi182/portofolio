@@ -3,14 +3,14 @@
 
 function Input({ label }) {
   return (
-    <label className="form-control w-full max-w-xs">
+    <label className="form-control ">
       <div className="label">
         <span className="label-text">{label}</span>
       </div>
       <input
         type="text"
         placeholder="Type here"
-        className="input input-bordered w-96 max-w-xs"
+        className="md:w-98 input input-bordered w-72 max-w-xs"
       />
     </label>
   );

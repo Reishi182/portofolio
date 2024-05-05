@@ -23,7 +23,7 @@ export default function Contact() {
             </span>
           </h1>
         </div>
-        <div className="">
+        <div className="flex items-center justify-center ">
           <Form />
         </div>
       </div>
